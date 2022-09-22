@@ -1,6 +1,6 @@
 PYTHONPATH=python
 BASEPATH="./"
-DATASET=yahoo #agnews dbpedia imdb amazon yahoo
+DATASET=agnews #agnews dbpedia imdb amazon yahoo
 TEMPLATEID=0 # 1 2 3
 SEED=144 # 145 146 147 148
 SHOT=10 # 0 1 5 10 20
