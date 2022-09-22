@@ -1,14 +1,14 @@
 PYTHONPATH=python
 BASEPATH="./"
-DATASET=amazon #agnews dbpedia imdb amazon yahoo
+DATASET=yahoo #agnews dbpedia imdb amazon yahoo
 TEMPLATEID=0 # 1 2 3
 SEED=144 # 145 146 147 148
-SHOT=5 # 0 1 10 20
+SHOT=10 # 0 1 5 10 20
 VERBALIZER=kpt #soft auto
 FILTER=tfidf_filter # none
 KPTWLR=0.0 # 0.06
 MAXTOKENSPLIT=-1 # 1
-MODEL_NAME_OR_PATH="../plm_cache/roberta-large"
+MODEL_NAME_OR_PATH="roberta-large"
 RESULTPATH="results_fewshot"
 OPENPROMPTPATH="OpenPrompt"
 
