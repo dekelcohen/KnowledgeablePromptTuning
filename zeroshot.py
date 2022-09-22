@@ -49,7 +49,7 @@ if args.dataset == "agnews":
     scriptformat = "txt"
     cutoff=0.5 if (not args.nocut) else 0.0
     max_seq_l = 128
-    batch_s = 30
+    batch_s = 16
 elif args.dataset == "dbpedia":
     dataset['train'] = DBpediaProcessor().get_train_examples(f"{args.openprompt_path}/datasets/TextClassification/dbpedia/")
     dataset['test'] = DBpediaProcessor().get_test_examples(f"{args.openprompt_path}/datasets/TextClassification/dbpedia/")
@@ -58,7 +58,7 @@ elif args.dataset == "dbpedia":
     scriptformat = "txt"
     cutoff=0.5 if (not args.nocut) else 0.0
     max_seq_l = 128
-    batch_s = 30
+    batch_s = 16
 elif args.dataset == "yahoo":
     dataset['train'] = YahooAnswersTopicsProcessor().get_train_examples(f"{args.openprompt_path}/datasets/TextClassification/yahoo_answers_topics/")
     dataset['test'] = YahooAnswersTopicsProcessor().get_test_examples(f"{args.openprompt_path}/datasets/TextClassification/yahoo_answers_topics/")
@@ -67,7 +67,7 @@ elif args.dataset == "yahoo":
     scriptformat = "json"
     cutoff=0.5 if (not args.nocut) else 0.0
     max_seq_l = 128
-    batch_s = 30
+    batch_s = 16
 elif args.dataset == "imdb":
     dataset['train'] = ImdbProcessor().get_train_examples(f"{args.openprompt_path}/datasets/TextClassification/imdb/")
     dataset['test'] = ImdbProcessor().get_test_examples(f"{args.openprompt_path}/datasets/TextClassification/imdb/")
