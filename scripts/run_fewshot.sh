@@ -10,11 +10,11 @@ KPTWLR=0.0 # 0.06
 MAXTOKENSPLIT=-1 # 1
 MODEL_NAME_OR_PATH="roberta-large"
 RESULTPATH="results_fewshot"
-OPENPROMPTPATH="OpenPrompt"
+OPENPROMPTPATH="../OpenPrompt"
 
 cd $BASEPATH
 
-CUDA_VISIBLE_DEVICES=7 $PYTHONPATH fewshot.py \
+CUDA_VISIBLE_DEVICES=0 $PYTHONPATH fewshot.py \
 --model_name_or_path $MODEL_NAME_OR_PATH \
 --result_file $RESULTPATH \
 --openprompt_path $OPENPROMPTPATH \
