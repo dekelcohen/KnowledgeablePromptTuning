@@ -72,7 +72,7 @@ elif args.dataset == "yahoo":
     scriptformat = "json"
     cutoff=0.5
     max_seq_l = 128
-    batch_s = 20
+    batch_s = 16
 elif args.dataset == "imdb":
     dataset['train'] = ImdbProcessor().get_train_examples(f"{args.openprompt_path}/datasets/TextClassification/imdb/")
     dataset['test'] = ImdbProcessor().get_test_examples(f"{args.openprompt_path}/datasets/TextClassification/imdb/")
